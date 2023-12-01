@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests">
+
+  <listeners>
+    <listener class-name="framework.testListener.OpenCloseBrowserEachClassListener"/>
+  </listeners>
+
+  <test name="smoke" group-by-instances="true">
+    <packages>
+      <package name="smoke.*"/>
+    </packages>
+  </test>
+</suite>
